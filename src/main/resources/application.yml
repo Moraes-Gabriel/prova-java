@@ -1,0 +1,13 @@
+
+api:
+  externa:
+    url: http://api-test.bhut.com.br:3000/api/cars
+spring:
+  data:
+    mongodb:
+      host: Localhost
+      port: 27017
+      database: cars
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
