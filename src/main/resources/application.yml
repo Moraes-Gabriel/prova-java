@@ -1,8 +1,10 @@
+
 server:
   port: 8080
 api:
   externa:
     url: http://api-test.bhut.com.br:3000/api/cars
+
 spring:
   data:
     mongodb:

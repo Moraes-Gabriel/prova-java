@@ -1,0 +1,19 @@
+version: "2.1"
+services:
+  app:
+    # replace imageName with your image name (block in your case)
+    image: prova-java
+    ports:
+      - 8092:8080 # Replace the port of your application here if used
+    depends_on:
+      - mongo
+    networks:
+      - provaJava
+  mongo:
+    image: mongo
+    volumes:
+      - ./database:/data
+    ports:
+      - "27017:27017"
+    networks:
+      - provaJava
